@@ -7,19 +7,31 @@ def Update_Savings(dict1):
     costs_dict = dict1['costs']
     cost = costs_dict['resentments']+costs_dict['distractions']
     total = savings-cost+income
-    dict1['savings'] = total
+    dict1['savings'] = max(total, 0)
     return dict1
 
 
 def Add_Cost(inventory, factor, quantity):
-    resentment = inventory['costs'][factor]
-    resentment = resentment+quantity
-    inventory['costs']['resentments'] = max(resentment, 0)
+    value = inventory['costs'][factor]
+    value = value+quantity
+    inventory['costs'][factor] = max(value, 0)
     return inventory
 
 
 def Reset_Cost(inventory, factor):
     inventory['costs'][factor] = 0
+    return inventory
+
+
+def Add_Income(inventory, factor, quantity):
+    value = inventory['costs'][factor]
+    value = value+quantity
+    inventory['income'][factor] = max(value, 0)
+    return inventory
+
+
+def Reset_Income(inventory, factor):
+    inventory['income'][factor] = 0
     return inventory
 
 
