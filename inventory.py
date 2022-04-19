@@ -11,15 +11,15 @@ def Update_Savings(dict1):
     return dict1
 
 
-def Add_Resentment(inventory, quantity):
-    resentment = inventory['costs']['resentments']
+def Add_Cost(inventory, factor, quantity):
+    resentment = inventory['costs'][factor]
     resentment = resentment+quantity
     inventory['costs']['resentments'] = max(resentment, 0)
     return inventory
 
 
-def Reset_Resentment(inventory):
-    inventory['costs']['resentments'] = 0
+def Reset_Cost(inventory, factor):
+    inventory['costs'][factor] = 0
     return inventory
 
 
@@ -33,11 +33,11 @@ print()
 inventory = Update_Savings(inventory)
 print(inventory)
 print()
-inventory = Add_Resentment(inventory, 2)
+inventory = Add_Cost(inventory, 'resentments', -2)
 print('Add Resentments')
 print(inventory)
 print()
-inventory = Reset_Resentment(inventory)
+inventory = Reset_Cost(inventory, 'resentments')
 print('Reset Resentments')
 print(inventory)
 print()
