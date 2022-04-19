@@ -10,5 +10,22 @@ game_map = {
     9: ('choice_emblem', 'pick_choice_card'),
     10: ('miss_home_group', 'miss_home_group'),
     11: ('you_are_ill', 'miss_next_two_home_groups'),
-    12: ('choice_emblem', 'pick_choice_card')
+    12: ('choice_emblem', 'pick_choice_card'),
+    13: ('family_trip', 'add_2_points_and_miss_next_2_home_groups'),
+    14: ('choice_emblem', 'pick_choice_card'),
+    15: ('sponsor', 'get_chip'),
+    16: ('meeting', 'get_chip'),
+    17: ('just_smelling_coffee', 'rest'),
+    18: ('choice', 'pick_choice_card'),
+    19: ('lose_a_meeting', 'decrease_meetings_by_one'),
+    20: ('sponsor', 'get_chip'),
+    21: ('choice', 'pick_choice_card'),
+    22: ('gain_a_meeting', 'increase_meetings_by_one'),
+    23: ('go_home_group', 'go_to_next_home_group_space'),
+    24: ('relapse', 'reset_total_to_one_coin'),
+    25: ('just_wondering', 'rest'),
+    26: ('choice', 'pick_choice_card'),
+    27: ('reaching_out', 'earn_chip'),
+    28: ('go_to_rehab', 'go_to_rehab_corner')
+
 }
