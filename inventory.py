@@ -1,5 +1,3 @@
-
-
 def Update_Savings(dict1):
     savings = dict1['savings']
     income_dict = dict1['income']
@@ -35,22 +33,43 @@ def Reset_Income(inventory, factor):
     return inventory
 
 
-inventory = {'income': {'meetings': 1, 'sponsees': 2, 'service': 0},
-             'costs': {'resentments': 3, 'distractions': 1},
+inventory = {'income': {'meetings': 4, 'sponsees': 2, 'service': 0},
+             'costs': {'resentments': 1, 'distractions': 1},
              'savings': 0}
+print('Starting Inventory')
+print(inventory)
+print()
 
+print('Update Savings')
 inventory = Update_Savings(inventory)
 print(inventory)
 print()
-inventory = Update_Savings(inventory)
-print(inventory)
-print()
-inventory = Add_Cost(inventory, 'resentments', -2)
+
 print('Add Resentments')
+inventory = Add_Cost(inventory, 'resentments', 2)
 print(inventory)
 print()
+print('Update Savings Again')
+inventory = Update_Savings(inventory)
+print(inventory)
+print()
+
+print('Decrease Distractions')
+inventory = Add_Cost(inventory, 'distractions', -2)
+print(inventory)
+print()
+print('Update Savings Again')
+inventory = Update_Savings(inventory)
+print(inventory)
+print()
+
+print('Reset resentments')
 inventory = Reset_Cost(inventory, 'resentments')
 print('Reset Resentments')
+print(inventory)
+print()
+print('Update Savings Again')
+inventory = Update_Savings(inventory)
 print(inventory)
 print()
 print()
