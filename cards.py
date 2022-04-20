@@ -4,11 +4,18 @@ cards = {
 }
 
 
-cards = {card_name: card_stem: {choice1: [text, get chips, lose chips, add costs, add income],
-                                choice2: [],
-                                choice3: [],
-                                choice4: []},
-         {no_choice: 'No Choice': {1: ['see a trigger, lose 3 chips', 0, 3, 0, 0]}},
-         {spouse_files: ''}
+cards = {card_name: card_stem: {choice1: [text, {chips: ('add', -2)}, resentments: ('reset', 0),
+                                          distractions: (None, 0), sponsees: (None, 0),
+                                          service: (None, 0), meetings: (None, 0)],
+                                choice2: [text, {chips: ('add', -2)}, resentments: ('reset', 0),
+                                          distractions: (None, 0), sponsees: (None, 0),
+                                          service: (None, 0), meetings: (None, 0)],
+                                choice3: [text, {chips: ('add', -2)}, resentments: ('reset', 0),
+                                          distractions: (None, 0), sponsees: (None, 0),
+                                          service: (None, 0), meetings: (None, 0)],
+                                choice4: [text, {chips: ('add', -2)}, resentments: ('reset', 0),
+                                          distractions: (None, 0), sponsees: (None, 0),
+                                          service: (None, 0), meetings: (None, 0)]},
+
 
          }
