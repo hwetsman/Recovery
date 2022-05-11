@@ -34,6 +34,11 @@ def Parse_Card(df, card):
         print(temp)
         if temp.shape[0] == 1:
             output['text'] = "This is a no choice card"
+            temp = temp.loc[:, (temp != 0).any(axis=0)]
+            temp = temp.loc[:, (temp != 'None').any(axis=0)]
+            temp = temp.drop('choice', axis=1)
+            for col in temp.columns:
+                output[col] = temp.loc[0, col]
             return output
         else:
             output['text'] = "We all have choices"

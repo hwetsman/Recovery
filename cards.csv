@@ -1,7 +1,7 @@
 ﻿card_name,card_stem,choice,chip_effect,chip_quant,resent_effect,resent_quant,meet_effect,meet_quant,distract_effect,distract_quant,sponsee_effect,sponsee_quant,sponsor_effect,sponsor_quant,service_effect,service_quant
 fight,"No Choice\nFight with your spouse,\nadd one resentment'",,None,0,add,1,None,0,None,0,None,0,None,0,None,0
-trigger,"No Choice\nSee a trigger,\nlose 3 chips",,lose,3,None,0,None,1,None,1,None,1,None,1,None,0
-bigshot,No Choice\nPlayed the bigshot at a party\naddone resentment,,None,0,add,1,None,2,None,2,None,2,None,2,None,0
+trigger,"No Choice\nSee a trigger,\nlose 3 chips",,lose,3,None,0,None,0,None,0,None,0,None,0,None,0
+bigshot,No Choice\nPlayed the bigshot at a party\naddone resentment,,None,0,add,1,None,0,None,0,None,0,None,0,None,0
 first_step,Take First Step\nSave this card to get out of\nTreatment or Relapse on your\nnext turn!,,None,0,None,0,None,0,None,0,None,0,None,0,None,0
 less_than_10,"No Choice\nIf you have less than 10 chips, you relapse.\nGive back all your chips and go to the\n relapse corner",,reset,0,None,0,None,0,None,0,None,0,None,0,None,0
 old_lover,Old Lover (not sober) Calls,You agree to meet,lose,2,None,0,None,0,None,0,None,0,None,0,None,0
