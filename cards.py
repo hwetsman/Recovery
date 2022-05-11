@@ -22,18 +22,22 @@ def Pick_A_Card():
 
 
 def Parse_Card(df, card):
+    output = {}
     print()
     print(card)
     if card == 'first_step':
-        return "Keep this card in case you need it but it is the next person's turn"
+        output['text'] = "Keep this card in case you need it but it is the next person's turn"
+        return output
     else:
         temp = df[df.card_name == card]
         temp.reset_index(inplace=True, drop=True)
         print(temp)
         if temp.shape[0] == 1:
-            return "This is a no choice card"
+            output['text'] = "This is a no choice card"
+            return output
         else:
-            return "We all have choices"
+            output['text'] = "We all have choices"
+            return output
 
 
 card = Pick_A_Card()
