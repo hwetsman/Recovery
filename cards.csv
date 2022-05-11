@@ -1,0 +1,31 @@
+﻿card_name,card_stem,choice,chip_effect,chip_quant,resent_effect,resent_quant,meet_effect,meet_quant,distract_effect,distract_quant,sponsee_effect,sponsee_quant,sponsor_effect,sponsor_quant,service_effect,service_quant
+fight,"No Choice\nFight with your spouse,\nadd one resentment'",,None,0,add,1,None,0,None,0,None,0,None,0,None,0
+trigger,"No Choice\nSee a trigger,\nlose 3 chips",,lose,3,None,0,None,1,None,1,None,1,None,1,None,0
+bigshot,No Choice\nPlayed the bigshot at a party\naddone resentment,,None,0,add,1,None,2,None,2,None,2,None,2,None,0
+first_step,Take First Step\nSave this card to get out of\nTreatment or Relapse on your\nnext turn!,,None,0,None,0,None,0,None,0,None,0,None,0,None,0
+less_than_10,"No Choice\nIf you have less than 10 chips, you relapse.\nGive back all your chips and go to the\n relapse corner",,reset,0,None,0,None,0,None,0,None,0,None,0,None,0
+old_lover,Old Lover (not sober) Calls,You agree to meet,lose,2,None,0,None,0,None,0,None,0,None,0,None,0
+old_lover,Old Lover (not sober) Calls,"You say, 'No thanks'",None,0,None,0,None,0,None,0,None,0,None,0,None,0
+old_lover,Old Lover (not sober) Calls,You tell them off,add,2,add,1,None,0,None,0,None,0,None,0,None,0
+old_lover,Old Lover (not sober) Calls,"Make amends, say good-bye",add,1,lose,1,None,0,None,0,None,0,None,0,None,0
+opioid,You are Prescribed an Opioid,Keep the leftovers just in case,lose,5,None,0,None,0,None,0,None,0,None,0,None,0
+opioid,You are Prescribed an Opioid,Take them when you think you need them,add,1,add,1,None,0,None,0,None,0,None,0,None,0
+opioid,You are Prescribed an Opioid,Take them as directed and return left overs,add,2,None,0,None,0,None,0,None,0,None,0,None,0
+opioid,You are Prescribed an Opioid,Number 3 and call your sponsor every day,add,5,None,0,None,0,None,0,None,0,None,0,None,0
+bonus,Big Bonus at Work,Buy big screen TV,add,3,None,0,lose,1,add,1,None,0,None,0,None,0
+bonus,Big Bonus at Work,Give 10% to charity and bank the rest,add,3,None,0,None,0,None,0,None,0,None,0,None,0
+bonus,Big Bonus at Work,Decrease work hours,None,0,None,0,None,0,None,0,None,0,None,0,add,1
+fired,Fired From Your Job,"Stop meetings, look for job",reset,0,None,0,None,0,None,0,None,0,None,0,None,0
+fired,Fired From Your Job,Work 4th/5th step,lose,3,lose,1,None,0,None,0,None,0,None,0,None,0
+fired,Fired From Your Job,Increase meetings,lose,2,None,0,add,1,None,0,None,0,None,0,None,0
+fired,Fired From Your Job,Make it on unemployment,lose,5,None,0,None,0,None,0,None,0,None,0,None,0
+divorce,Spouse Files for Divorce,Work 4th/5th step,lose,3,reset,0,None,0,None,0,None,0,None,0,None,0
+divorce,Spouse Files for Divorce,Add a meeting,None,0,None,0,add,1,None,0,None,0,None,0,None,0
+divorce,Spouse Files for Divorce,Drop sponsor and meetings to work on relationship,add,3,None,0,reset,0,None,0,None,0,reset,0,None,0
+divorce,Spouse Files for Divorce,Counter sue,add,6,add,2,None,0,None,0,None,0,None,0,None,0
+bad_day,Having a Bad Day,"Relax at home, watch TV",add,4,add,1,None,0,None,0,None,0,None,0,None,0
+bad_day,Having a Bad Day,Make an extra meeting,add,2,None,0,None,0,None,0,None,0,None,0,None,0
+bad_day,Having a Bad Day,Call someone in your program,add,1,None,0,None,0,None,0,None,0,None,0,None,0
+birthday,Your Recovery Birthday,Take a sponsee to lunch,add,2,None,0,None,0,None,0,None,0,None,0,None,0
+birthday,Your Recovery Birthday,Play the bigsot at a meeting,add,3,add,1,None,0,None,0,None,0,None,0,None,0
+birthday,Your Recovery Birthday,Visit your old treatment center,None,0,None,0,None,0,None,0,None,0,None,0,None,0
