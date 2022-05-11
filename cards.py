@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy
 
 file = 'cards.csv'
 
