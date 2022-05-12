@@ -42,11 +42,19 @@ def Parse_Card(df, card):
             return output
         else:
             output['text'] = "We all have choices"
+            temp = temp.loc[:, (temp != 0).any(axis=0)]
+            temp = temp.loc[:, (temp != 'None').any(axis=0)]
+            cols = temp.columns.to_list().remove(['card_name', 'card_stem'])
+            print(temp)
+            print(cols)
+            for col in temp.columns:
+                output[col] = temp.loc[0, col]
+
             return output
 
 
 card = Pick_A_Card()
 outcome = Parse_Card(df, card)
-print(outcome)
+print(outcome['card_stem'])
 print()
 print()
