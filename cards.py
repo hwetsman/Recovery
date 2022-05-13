@@ -62,21 +62,22 @@ def Parse_Card(df, card):
     print(card)
     if card == 'first_step':
         # print('First Step')
-        First_Step_Card(card)
+        outcome = First_Step_Card(card)
+
     else:
         temp = df[df.card_name == card]
         temp.reset_index(inplace=True, drop=True)
         print(temp)
         if temp.shape[0] == 1:
             # print('No Choice')
-            No_Choice_Card(card, temp)
+            outcome = No_Choice_Card(card, temp)
         else:
             # print('Choice')
-            Choice_Card(card, temp)
+            outcome = Choice_Card(card, temp)
 
 
 card = Pick_A_Card()
 outcome = Parse_Card(df, card)
-# print(outcome['card_stem'])
+print(outcome['card_stem'])
 print()
 print()
