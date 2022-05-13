@@ -44,7 +44,7 @@ def Parse_Card(df, card):
             output['text'] = "We all have choices"
             temp = temp.loc[:, (temp != 0).any(axis=0)]
             temp = temp.loc[:, (temp != 'None').any(axis=0)]
-            cols = temp.columns.to_list().remove(['card_name', 'card_stem'])
+            cols = [x for x in temp.columns if x not in ['card_name', 'card_stem']]
             print(temp)
             print(cols)
             for col in temp.columns:
