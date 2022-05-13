@@ -47,9 +47,14 @@ def Parse_Card(df, card):
             cols = [x for x in temp.columns if x not in ['card_name', 'card_stem']]
             print(temp)
             print(cols)
+
+            print('Your choices are:')
+            for i in range(temp.shape[0]):
+                print(f"{i}. {temp.loc[i,'choice']}")
+
             for col in temp.columns:
                 output[col] = temp.loc[0, col]
-
+            print(output)
             return output
 
 
