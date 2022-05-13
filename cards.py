@@ -26,7 +26,8 @@ def First_Step_Card(card):
     return output
 
 
-def No_Choice_Card(card):
+def No_Choice_Card(card, temp):
+    output = {}
     output['text'] = "This is a no choice card"
     temp = temp.loc[:, (temp != 0).any(axis=0)]
     temp = temp.loc[:, (temp != 'None').any(axis=0)]
@@ -36,7 +37,8 @@ def No_Choice_Card(card):
     return output
 
 
-def Choice_Card(card):
+def Choice_Card(card, temp):
+    output = {}
     output['text'] = "We all have choices"
     temp = temp.loc[:, (temp != 0).any(axis=0)]
     temp = temp.loc[:, (temp != 'None').any(axis=0)]
@@ -59,19 +61,22 @@ def Parse_Card(df, card):
     print()
     print(card)
     if card == 'first_step':
+        # print('First Step')
         First_Step_Card(card)
     else:
         temp = df[df.card_name == card]
         temp.reset_index(inplace=True, drop=True)
         print(temp)
         if temp.shape[0] == 1:
-            No_Choice_Card(card)
+            # print('No Choice')
+            No_Choice_Card(card, temp)
         else:
-            Choice_Card(card)
+            # print('Choice')
+            Choice_Card(card, temp)
 
 
 card = Pick_A_Card()
 outcome = Parse_Card(df, card)
-print(outcome['card_stem'])
+# print(outcome['card_stem'])
 print()
 print()
