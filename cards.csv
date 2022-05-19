@@ -1,4 +1,4 @@
-﻿card_name,card_stem,choice,chip_effect,chip_quant,resent_effect,resent_quant,meet_effect,meet_quant,distract_effect,distract_quant,sponsee_effect,sponsee_quant,sponsor_effect,sponsor_quant,service_effect,service_quant
+card_name,card_stem,choice,chip_effect,chip_quant,resent_effect,resent_quant,meet_effect,meet_quant,distract_effect,distract_quant,sponsee_effect,sponsee_quant,sponsor_effect,sponsor_quant,service_effect,service_quant
 fight,"No Choice\nFight with your spouse,\nadd one resentment'",,None,0,add,1,None,0,None,0,None,0,None,0,None,0
 trigger,"No Choice\nSee a trigger,\nlose 3 chips",,lose,3,None,0,None,0,None,0,None,0,None,0,None,0
 bigshot,No Choice\nPlayed the bigshot at a party\naddone resentment,,None,0,add,1,None,0,None,0,None,0,None,0,None,0
@@ -11,7 +11,7 @@ old_lover,Old Lover (not sober) Calls,"Make amends, say good-bye",add,1,lose,1,N
 opioid,You are Prescribed an Opioid,Keep the leftovers just in case,lose,5,None,0,None,0,None,0,None,0,None,0,None,0
 opioid,You are Prescribed an Opioid,Take them when you think you need them,add,1,add,1,None,0,None,0,None,0,None,0,None,0
 opioid,You are Prescribed an Opioid,Take them as directed and return left overs,add,2,None,0,None,0,None,0,None,0,None,0,None,0
-opioid,You are Prescribed an Opioid,Number 3 and call your sponsor every day,add,5,None,0,None,0,None,0,None,0,None,0,None,0
+opioid,You are Prescribed an Opioid,Number 3 and call your sponsor 2X every day,add,5,None,0,None,0,None,0,None,0,None,0,None,0
 bonus,Big Bonus at Work,Buy big screen TV,add,3,None,0,lose,1,add,1,None,0,None,0,None,0
 bonus,Big Bonus at Work,Give 10% to charity and bank the rest,add,3,None,0,None,0,None,0,None,0,None,0,None,0
 bonus,Big Bonus at Work,Decrease work hours,None,0,None,0,None,0,None,0,None,0,None,0,add,1
@@ -29,3 +29,14 @@ bad_day,Having a Bad Day,Call someone in your program,add,1,None,0,None,0,None,0
 birthday,Your Recovery Birthday,Take a sponsee to lunch,add,2,None,0,None,0,None,0,None,0,None,0,None,0
 birthday,Your Recovery Birthday,Play the bigsot at a meeting,add,3,add,1,None,0,None,0,None,0,None,0,None,0
 birthday,Your Recovery Birthday,Visit your old treatment center,None,0,None,0,None,0,None,0,None,0,None,0,None,0
+big_house,Move to a Bigger Home,Let go of a meeting a week to go buy furniture,add,3,None,0,Lose,1,None,0,None,0,None,0,None,0
+big_house,Move to a Bigger Home,Just ist back and feel bigger and better,add,2,add,1,None,0,None,0,None,0,None,0,None,0
+big_house,Move to a Bigger Home,Use the space to host weekly big book study,add,1,None,0,add,1,None,0,None,0,None,0,None,0
+big_house,Move to a Bigger Home,Stop going to meetings to enjoy your family and home,add,3,None,0,reset,0,None,0,None,0,None,0,None,0
+raise,Got a Raise,Buy yourself a new watch,add,2,None,0,None,0,None,0,None,0,None,0,None,0
+raise,Got a Raise,Buy something for your spouse,add,4,None,0,None,0,None,0,None,0,None,0,None,0
+raise,Got a Raise,Use the extra to pay down debt faster,add,5,None,0,None,0,None,0,None,0,None,0,None,0
+raise,Got a Raise,Call your sponsor and talk about it ,None,0,Lose,1,None,0,None,0,None,0,None,0,None,0
+cousin,Your Cousin with Addiction Calls for Help,Take them to a meeting,add,3,None,0,None,0,None,0,None,0,None,0,None,0
+cousin,Your Cousin with Addiction Calls for Help,Give them number to a treatment center,add,2,None,0,None,0,None,0,None,0,None,0,None,0
+cousin,Your Cousin with Addiction Calls for Help,Call your sponsor and go together to cousin’s house,None,0,lose,1,None,0,None,0,None,0,None,0,None,0
