@@ -9,9 +9,9 @@ import pandas as pd
 
 # select player profile
 profiles_df = pd.read_csv('starting_cards.csv')
-
 profiles_idx = randint(profiles_df.index.tolist()[0], profiles_df.index.tolist()[-1])
-print(profiles_idx)
+profiles_df = profiles_df[profiles_df.index == profiles_idx]
+print(profiles_df)
 
 
 # inventory
