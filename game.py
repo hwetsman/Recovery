@@ -7,6 +7,12 @@ import pandas as pd
 #              'costs': {'resentments': 1, 'distractions': 1},
 #              'savings': 0}
 
+# select player profile
+profiles_df = pd.read_csv('starting_cards.csv')
+print(profiles_df)
+
+
+# inventory
 print()
 print(inventory)
 inventory = Add_Cost(inventory, 'resentments', 2)
