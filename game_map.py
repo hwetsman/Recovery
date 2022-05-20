@@ -7,7 +7,7 @@ spaces = {
     4: ('go_meeting', 'go_to_meeting'),
     5: ('choice_emblem', 'pick_choice_card'),
     6: ('miss_home_group', 'miss_home_group'),
-    7: ('home_group', 'take_weekly_chips')
+    7: ('home_group', 'take_weekly_chips'),
     8: ('you_are_ill', 'miss_next_two_home_groups'),
     9: ('choice_emblem', 'pick_choice_card'),
     10: ('family_trip', 'add_2_points_and_miss_next_2_home_groups'),
