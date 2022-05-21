@@ -48,6 +48,20 @@ Meeting/Just Smelling the Coffee - This is where the player goes when directed t
 
 Relapse/Just wondering - This is where the patient goes for one turn when they relapse. 'Just wondering' is for landing on this square during a normal move.
 
+## Genogram Version
+The game is so simple that some people seeking recovery may feel they have benefitted from it fully after a few times playing. Once adept at game play, a person might seek to learn more and deepen their recovery by playing the genogram version.
+
+### Set up
+Draw your biological or adoptive venogram. You can even map your work organization or your home group. Play consists of 2 parts:
+Drawing your genogram
+Playing from the perspective of your genogram
+
+### Draw
+Start with yourself, parents, sibs. Assignments such as draw in the first person to come to this country. The first person who had addiction. The first person murdered. The first rich person, the first person on welfare, etc
+
+### Play
+Play people on your or others’ genograms. Who got the most angry? Who was most sensitive. Who was most proud of you. Who was sick a lot. Who had the most free time. Who worked the hardest. Then pick someone's persona and play the game as them. Try to make their choices and see what effect it had on their lives.
+
 ## License
 This game is copyrighted 2009 by Howard Wetsman MD. Any use of any materials
 herein must by by permission.
