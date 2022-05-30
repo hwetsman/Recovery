@@ -1,5 +1,5 @@
 from inventory import Add_Cost, Reset_Cost, Update_Savings, inventory, Add_Income, Reset_Income
-from random import randint
+import random
 from game_map import spaces
 import pandas as pd
 
@@ -9,7 +9,8 @@ import pandas as pd
 
 # select player profile
 profiles_df = pd.read_csv('starting_cards.csv')
-profiles_idx = randint(profiles_df.index.tolist()[0], profiles_df.index.tolist()[-1])
+print(profiles_df)
+profiles_idx = random.choice(profiles_df.index.tolist())
 profiles_df = profiles_df[profiles_df.index == profiles_idx]
 print(profiles_df)
 
@@ -21,4 +22,4 @@ inventory = Add_Cost(inventory, 'resentments', 2)
 print(inventory)
 print()
 for i in range(10):
-    print(randint(1, 6))
+    print(random.randint(1, 6))
